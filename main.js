@@ -31,18 +31,18 @@ function randomizer (){
     }
     return string
 }
-
+// if restart button is click set state back to 1//
 function reStart() {
     state = 1;
     updatePage()
 }
-
+// if next button is clicked do current state plus 1 
 function nextPage () {
     console.log (state);
     state++;
     updatePage()
 }
-
+// define what each state looks like by calling back to html
 function updatePage() {
     if (state == 1) {
         document.getElementById("heading").innerHTML = "I can read your mind.";
