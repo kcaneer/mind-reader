@@ -17,15 +17,15 @@ function init() {
 //
 
 function randomizer (){
-    var character = symbols[Math.floor(Math.random() * 10)]
+    var character = symbols[Math.floor(Math.random() * symbols.length)]
     var string = "";
     for (i = 0; i <= 99; i++) {
         if (i % 9) {
-             var ninth = symbols[Math.floor(Math.random() * 10)]
-             string = string + i + ":" + ninth + "<br>"
+             var ninth = symbols[Math.floor(Math.random() * symbols.length)]
+             string = string + i + " : " + ninth + "<br>"
         }
         else {
-            string = string + i + ":" + character + "<br>"
+            string = string + i + " : " + character + "<br>"
             selected = character
         }
     }
