@@ -1,18 +1,23 @@
-body, html {
-    height: 100%;
-    margin: 0;
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 .bg {
-    background-image: url("img/stars.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("img/stars.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
 }
 
 .container {
-    background-color: darkgray;
+  background-color: darkgray;
 }
 
 h2 {
-    height: 150px;
+  height: 150px;
 }
